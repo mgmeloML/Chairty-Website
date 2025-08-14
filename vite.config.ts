@@ -5,13 +5,13 @@ import { resolve } from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Chairty-Website/', // 👈 This is the important bit for GitHub Pages
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
     },
   },
   server: {
+    // Add watch options to ignore node_modules and reduce file watchers
     watch: {
       ignored: ['**/node_modules/**', '**/dist/**'],
       usePolling: true,

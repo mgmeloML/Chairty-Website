@@ -1,5 +1,6 @@
 {
   "name": "shadcnui",
+  "homepage": ".",
   "type": "module",
   "packageManager": "pnpm@8.10.0",
   "scripts": {
